@@ -63,8 +63,7 @@ echo '
                     <div class="logo text-center">
                         <a href="index.php">
                             <!-- replace logo here | GANTI pake logo .jpg-->
-                            <!--<img src="images/logo.png" alt="website main logo" />-->
-                            <h1 class="text-center">ICONIC</h1>
+                            <img src="images/logo.png" alt="website main logo" height="100px" width="300px"/>
                         </a>
                     </div>
                 </div>

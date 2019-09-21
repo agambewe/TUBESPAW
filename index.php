@@ -64,7 +64,7 @@ echo'
             </div>
             <!-- / Languages -->
             <div class="row">';
-            $api_url = "http://localhost/TUBES/api/read.php";
+            $api_url = "http://localhost:8080/TUBESPAW/api/read.php";
             $data = json_decode(file_get_contents($api_url), true);
             foreach ($data['result'] as $result) :
             echo '
