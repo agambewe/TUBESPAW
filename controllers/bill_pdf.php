@@ -36,9 +36,8 @@ Class bill_pdf extends CI_Controller{
 
         $pdf->Cell(130 ,5,'Shipping : ',0,0);
         $pdf->Cell(25 ,5,'Free',0,0);
-
-        
-    $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
+      
+        $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
 
         $pdf->Cell(130 ,5,'Total : ',0,0);
         $pdf->Cell(25 ,5,'#250',0,0);
