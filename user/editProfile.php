@@ -115,4 +115,5 @@ $('#password').on('keyup', function () {
 });
 </script>
 <script src="../script/script.js"></script>
+<script src="../script/script1.js"></script>
 </html>
