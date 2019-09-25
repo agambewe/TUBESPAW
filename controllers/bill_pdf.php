@@ -13,9 +13,14 @@ Class bill_pdf extends CI_Controller{
         // setting jenis font yang akan digunakan
         $pdf->SetFont('Arial','B',16);
         // mencetak string 
-        $pdf->Cell(280,7,'JADWAL KULIAH',0,1,'C');
+        $pdf->Cell(280,7,'ICONIC',0,1,'C');
         $pdf->SetFont('Arial','B',12);
-    
+
+        $pdf->Cell(280,7,'Order Summary',0,1,'C');
+        $pdf->SetFont('Arial','B',12);
+        
+        $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
+
         $pdf->Cell(130 ,5,'Ambassador Heritage 1921',0,0);
         $pdf->Cell(59 ,5,'',0,1);//end of line
 
@@ -31,6 +36,9 @@ Class bill_pdf extends CI_Controller{
 
         $pdf->Cell(130 ,5,'Shipping : ',0,0);
         $pdf->Cell(25 ,5,'Free',0,0);
+
+        
+    $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
 
         $pdf->Cell(130 ,5,'Total : ',0,0);
         $pdf->Cell(25 ,5,'#250',0,0);
