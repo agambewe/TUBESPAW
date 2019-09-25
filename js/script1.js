@@ -30,3 +30,33 @@
           return true;
       }
     }
+
+    function validateFormContact() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        
+        if(name=="" || email=="" || message=="")
+        {
+            alert('Data tidak boleh kosong');
+        }
+        else
+        {
+            return true;
+        }
+      }
+
+     /* function validateFormLaundry() {
+        var Name = document.getElementById("name").value;
+        var Brand = document.getElementById("email").value;
+        var  = document.getElementById("message").value;
+        
+        if(name=="" || email=="" || message=="")
+        {
+            alert('Data tidak boleh kosong');
+        }
+        else
+        {
+            return true;
+        }
+      }

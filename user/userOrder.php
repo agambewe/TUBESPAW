@@ -44,7 +44,7 @@
             <h3>CONTACT</h3>
             <h4><i>We Always Ready to Help You</i></h4>
             <div class="contact-form col-md-12">
-                <form id="contact-form" method="post" action="" role="form">
+                <form onsubmit="return validateFormContact()" id="contact-form" method="post" action="" role="form">
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
                     </div>
