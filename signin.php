@@ -71,7 +71,7 @@
                             </div>
                             <p id="message"></p>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-main text-center">Sign In</button>
+                                <button type="submit" class="btn btn-main text-center">Sign Up</button>
                             </div>
                         </form>
                 </div>
