@@ -36,7 +36,7 @@ if(!$_SESSION['isLogin']){
             $image = $data['image'];
         }
     ?>
-    <form method="POST" action="../proses/updateUser.php" class="form-horizontal" name="myForm" role="form" enctype="multipart/form-data">
+    <form onsubmit="return validateFormProfile()" method="POST" action="../proses/updateUser.php" class="form-horizontal" name="myForm" role="form" enctype="multipart/form-data">
         <fieldset>
             <tr>
                 <div class="form-group col-md-9">

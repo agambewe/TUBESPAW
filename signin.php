@@ -55,7 +55,7 @@
           -->
                         <h1 class="text-center">ICONIC</h1>
                         <h2 class="text-center">Create Your Account</h2>
-                        <form class="text-left clearfix" action="proses/prosesRegister.php" method="post">
+                        <form class="text-left clearfix" action="proses/prosesRegister.php" onsubmit="return validateFormRegister()" method="post">
                             <div class="form-group">
                                 <input name="name" type="text" class="form-control" placeholder="Name">
                             </div>
