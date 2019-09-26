@@ -118,56 +118,71 @@ ABOUT OUR STORE|CEK
 
 
     <footer class="footer section text-center">
-        <div class="container">
-            <h3>CONTACT</h3>
-            <h4><i>We Always Ready to Help You</i></h4>
-            <div class="contact-form col-md-12">
-                <form id="contact-form" method="post" action="" role="form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+        <div class="contact-section">
+            <div class="container">
+                <div class="row">
+                    <h3 style="margin-left: 230px">CONTACT</h3>
+                    <h4 style="margin-left: 160px"><i>We Always Ready to Help You</i></h4>
+                    <!-- Contact Form -->
+                    <div class="contact-form col-md-6 ">
+                        <form id="contact-form" method="post" action="" role="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                            </div>
+                            <div id="cf-submit">
+                                <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                    <!-- ./End Contact Form -->
+
+                    <!-- Contact Details -->
+                    <div class="contact-details col-md-6 ">
+                        <div class="google-map">
+                            <div id="map"></div>
+                        </div>
+                        <ul class="contact-short-info">
+                            <li>
+                                <i class="tf-ion-ios-home"></i>
+                                <span>Babarsari, Yogyakarta</span>
+                            </li>
+                            <li>
+                                <i class="tf-ion-android-phone-portrait"></i>
+                                <span>Phone: 0129- 12323-123123</span>
+                            </li>
+                            <li>
+                                <i class="tf-ion-android-globe"></i>
+                                <span>Fax: +880-31-000-000</span>
+                            </li>
+                            <li>
+                                <i class="tf-ion-android-mail"></i>
+                                <span>Email: hello@example.com</span>
+                            </li>
+                        </ul>
+                        <!-- Footer Social Links -->
+                        <div class="social-icon">
+                            <ul>
+                                <li><a class="fb-icon" href="#"><i class="tf-ion-social-facebook"></i></a></li>
+                                <li><a href="#"><i class="tf-ion-social-twitter"></i></a></li>
+                                <li><a href="#"><i class="tf-ion-social-pinterest-outline"></i></a></li>
+                            </ul>
+                        </div>
+                        <!--/. End Footer Social Links -->
                     </div>
-                    <div class="form-group">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
-                    </div>
-                    <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-                    </div>
-                </form>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="">SHIPPING</a>
-                        </li>
-                        <li>
-                            <a href="">TERMS OF SERVICE</a>
-                        </li>
-                        <li>
-                            <a href="">PRIVACY POLICY</a>
-                        </li>
-                    </ul>
-                    <p class="copyright-text">Powered by Bootstrap</p>
+                    <!-- / End Contact Details -->
+
+
+
                 </div>
+                <!-- end row -->
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="">Babarsari, Yogyakarta</a>
-                        </li>
-                        <li>
-                            <a href="">Phone: +00 151515</a>
-                        </li>
-                        <li>
-                            <a href="">Email: mail@mail.com</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!-- end container -->
         </div>
     </footer>
 
