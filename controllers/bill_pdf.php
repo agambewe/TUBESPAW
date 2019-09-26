@@ -36,11 +36,11 @@ Class bill_pdf extends CI_Controller{
 
         $pdf->Cell(45,5,'Subtotal :',0,0,'L'); 
         $pdf->SetFont('Arial','',12);
-        $pdf->Cell(70,7,...($...),0,1,'J'); 
+        $pdf->Cell(70,7,strtoupper($string),0,1,'J'); 
         $pdf->Ln(6); 
 
         $pdf->Cell(45,5,'Shipping',0,0,'L');
-        $pdf->Cell(70,7,....($...),0,1,'J'); 
+        $pdf->Cell(70,7,strtoupper($string),0,1,'J'); 
         $pdf->Ln(6); 
 
         $pdf->SetLineWidth(0.8);
