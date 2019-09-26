@@ -19,10 +19,12 @@ Class bill_pdf extends CI_Controller{
         $pdf->Cell(280,7,'Order Summary',0,1,'C');
         $pdf->SetFont('Arial','B',12);
         
-        $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
+        $pdf->SetLineWidth(0.8);
+        $pdf->Line(10,28,199,28);
+        $pdf->Ln(8); 
 
         $pdf->Cell(130 ,5,'Ambassador Heritage 1921',0,0);
-        $pdf->Cell(59 ,5,'',0,1);//end of line
+        $pdf->Cell(59 ,5,'',0,1);
 
         $pdf->SetFont('Arial','',12);
 
@@ -30,17 +32,24 @@ Class bill_pdf extends CI_Controller{
         $pdf->Cell(59 ,5,'',0,1);
 
         $pdf->Cell(130 ,5,'Remove',0,0);
+        $pdf->Ln(6); 
 
-        $pdf->Cell(130 ,5,'Subtotal : ',0,0);
-        $pdf->Cell(25 ,5,'$190',0,0);
+        $pdf->Cell(45,5,'Subtotal :',0,0,'L'); 
+        $pdf->SetFont('Arial','',12);
+        $pdf->Cell(70,7,...($...),0,1,'J'); 
+        $pdf->Ln(6); 
 
-        $pdf->Cell(130 ,5,'Shipping : ',0,0);
-        $pdf->Cell(25 ,5,'Free',0,0);
-      
-        $pdf->Line($pdf->x,$pdf->y,$pdf->w-$pdf->x-$pdf->rMargin,$pdf->y);
+        $pdf->Cell(45,5,'Shipping',0,0,'L');
+        $pdf->Cell(70,7,....($...),0,1,'J'); 
+        $pdf->Ln(6); 
 
-        $pdf->Cell(130 ,5,'Total : ',0,0);
-        $pdf->Cell(25 ,5,'#250',0,0);
+        $pdf->SetLineWidth(0.8);
+        $pdf->Line(10,28,199,28);
+        $pdf->Ln(8); 
+   
+        $pdf->Cell(45,5,'Total : ',0,0,'L');
+        $pdf->Cell(70,7,....($...),0,1,'J'); 
+        $pdf->Ln(6); 
     }  
     $pdf->Output();
     }
