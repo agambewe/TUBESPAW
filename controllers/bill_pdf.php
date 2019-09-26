@@ -14,10 +14,10 @@ Class bill_pdf extends CI_Controller{
         $pdf->SetFont('Arial','B',16);
         // mencetak string 
         $pdf->Cell(280,7,'ICONIC',0,1,'C');
-        $pdf->SetFont('Arial','B',12);
+        $pdf->SetFont('Arial','B',18);
 
-        $pdf->Cell(280,7,'Order Summary',0,1,'C');
-        $pdf->SetFont('Arial','B',12);
+        $pdf->Cell(280,7,'Payment Billing Report',0,1,'C');
+        $pdf->SetFont('Arial','B',14);
         
         $pdf->SetLineWidth(0.8);
         $pdf->Line(10,28,199,28);
